@@ -54,14 +54,46 @@
 		551909C01E29C9DA003ABCA1 /* ChartsInSwift */ = {
 			isa = PBXGroup;
 			children = (
-				551909C11E29C9DA003ABCA1 /* AppDelegate.swift */,
-				551909C31E29C9DA003ABCA1 /* ViewController.swift */,
+				55AE8B471E4F8DBC007C4320 /* Model */,
+				55AE8B481E4F8DC6007C4320 /* Controller */,
+				55AE8B451E4F8D96007C4320 /* View */,
+				55AE8B461E4F8DA2007C4320 /* Supporting */,
+			);
+			path = ChartsInSwift;
+			sourceTree = "<group>";
+		};
+		55AE8B451E4F8D96007C4320 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				551909C51E29C9DA003ABCA1 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		55AE8B461E4F8DA2007C4320 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				551909C11E29C9DA003ABCA1 /* AppDelegate.swift */,
 				551909C81E29C9DA003ABCA1 /* Assets.xcassets */,
 				551909CA1E29C9DA003ABCA1 /* LaunchScreen.storyboard */,
 				551909CD1E29C9DA003ABCA1 /* Info.plist */,
 			);
-			path = ChartsInSwift;
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		55AE8B471E4F8DBC007C4320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		55AE8B481E4F8DC6007C4320 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				551909C31E29C9DA003ABCA1 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +334,7 @@
 				551909D21E29C9DA003ABCA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
