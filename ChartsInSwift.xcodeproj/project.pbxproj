@@ -15,6 +15,7 @@
 		55AE8B4B1E4FE31D007C4320 /* Charts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55AE8B4A1E4FE31D007C4320 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55AE8B4C1E4FE33B007C4320 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8B4A1E4FE31D007C4320 /* Charts.framework */; };
 		55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD0EF51E77434400ADB458 /* Extensions.swift */; };
+		55CD0EF81E7744B500ADB458 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD0EF71E7744B500ADB458 /* ChartTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,7 @@
 		551909CD1E29C9DA003ABCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55AE8B4A1E4FE31D007C4320 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		55CD0EF51E77434400ADB458 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		55CD0EF71E7744B500ADB458 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		55AE8B471E4F8DBC007C4320 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55CD0EF71E7744B500ADB458 /* ChartTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				551909BB1E29C9DA003ABCA1 /* Frameworks */,
 				551909BC1E29C9DA003ABCA1 /* Resources */,
 				55AE8B491E4FE2F2007C4320 /* CopyFiles */,
+				55CD0EFA1E77494700ADB458 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,11 +190,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55CD0EFA1E77494700ADB458 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		551909BA1E29C9DA003ABCA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CD0EF81E7744B500ADB458 /* ChartTableViewCell.swift in Sources */,
 				551909C41E29C9DA003ABCA1 /* ViewController.swift in Sources */,
 				55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */,
 				551909C21E29C9DA003ABCA1 /* AppDelegate.swift in Sources */,
