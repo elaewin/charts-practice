@@ -12,7 +12,23 @@
 		551909C71E29C9DA003ABCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551909C51E29C9DA003ABCA1 /* Main.storyboard */; };
 		551909C91E29C9DA003ABCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551909C81E29C9DA003ABCA1 /* Assets.xcassets */; };
 		551909CC1E29C9DA003ABCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551909CA1E29C9DA003ABCA1 /* LaunchScreen.storyboard */; };
+		55AE8B4B1E4FE31D007C4320 /* Charts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55AE8B4A1E4FE31D007C4320 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55AE8B4C1E4FE33B007C4320 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8B4A1E4FE31D007C4320 /* Charts.framework */; };
+		55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD0EF51E77434400ADB458 /* Extensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55AE8B491E4FE2F2007C4320 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				55AE8B4B1E4FE31D007C4320 /* Charts.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		551909BE1E29C9DA003ABCA1 /* ChartsInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,8 @@
 		551909C81E29C9DA003ABCA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551909CB1E29C9DA003ABCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551909CD1E29C9DA003ABCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AE8B4A1E4FE31D007C4320 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		55CD0EF51E77434400ADB458 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55AE8B4C1E4FE33B007C4320 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +57,7 @@
 		551909B51E29C9DA003ABCA1 = {
 			isa = PBXGroup;
 			children = (
+				55AE8B4A1E4FE31D007C4320 /* Charts.framework */,
 				551909C01E29C9DA003ABCA1 /* ChartsInSwift */,
 				551909BF1E29C9DA003ABCA1 /* Products */,
 			);
@@ -73,6 +93,7 @@
 		55AE8B461E4F8DA2007C4320 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				55CD0EF51E77434400ADB458 /* Extensions.swift */,
 				551909C11E29C9DA003ABCA1 /* AppDelegate.swift */,
 				551909C81E29C9DA003ABCA1 /* Assets.xcassets */,
 				551909CA1E29C9DA003ABCA1 /* LaunchScreen.storyboard */,
@@ -106,6 +127,7 @@
 				551909BA1E29C9DA003ABCA1 /* Sources */,
 				551909BB1E29C9DA003ABCA1 /* Frameworks */,
 				551909BC1E29C9DA003ABCA1 /* Resources */,
+				55AE8B491E4FE2F2007C4320 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -170,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551909C41E29C9DA003ABCA1 /* ViewController.swift in Sources */,
+				55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */,
 				551909C21E29C9DA003ABCA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +317,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YFWUVNT8L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ChartsInSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericawinberry.ChartsInSwift;
@@ -307,6 +334,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YFWUVNT8L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ChartsInSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericawinberry.ChartsInSwift;
