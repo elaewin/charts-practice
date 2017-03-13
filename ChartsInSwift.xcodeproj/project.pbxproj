@@ -14,6 +14,7 @@
 		551909CC1E29C9DA003ABCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551909CA1E29C9DA003ABCA1 /* LaunchScreen.storyboard */; };
 		55AE8B4B1E4FE31D007C4320 /* Charts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55AE8B4A1E4FE31D007C4320 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55AE8B4C1E4FE33B007C4320 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8B4A1E4FE31D007C4320 /* Charts.framework */; };
+		55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD0EF51E77434400ADB458 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,7 @@
 		551909CB1E29C9DA003ABCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551909CD1E29C9DA003ABCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55AE8B4A1E4FE31D007C4320 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		55CD0EF51E77434400ADB458 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		55AE8B461E4F8DA2007C4320 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				55CD0EF51E77434400ADB458 /* Extensions.swift */,
 				551909C11E29C9DA003ABCA1 /* AppDelegate.swift */,
 				551909C81E29C9DA003ABCA1 /* Assets.xcassets */,
 				551909CA1E29C9DA003ABCA1 /* LaunchScreen.storyboard */,
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551909C41E29C9DA003ABCA1 /* ViewController.swift in Sources */,
+				55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */,
 				551909C21E29C9DA003ABCA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
