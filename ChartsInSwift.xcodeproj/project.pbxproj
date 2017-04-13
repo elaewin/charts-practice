@@ -16,6 +16,7 @@
 		55AE8B4C1E4FE33B007C4320 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8B4A1E4FE31D007C4320 /* Charts.framework */; };
 		55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD0EF51E77434400ADB458 /* Extensions.swift */; };
 		55CD0EF81E7744B500ADB458 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD0EF71E7744B500ADB458 /* ChartTableViewCell.swift */; };
+		55CD0EFC1E774FBD00ADB458 /* TestLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD0EFB1E774FBD00ADB458 /* TestLineChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		55AE8B4A1E4FE31D007C4320 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		55CD0EF51E77434400ADB458 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		55CD0EF71E7744B500ADB458 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
+		55CD0EFB1E774FBD00ADB458 /* TestLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,9 @@
 		551909B51E29C9DA003ABCA1 = {
 			isa = PBXGroup;
 			children = (
-				55AE8B4A1E4FE31D007C4320 /* Charts.framework */,
 				551909C01E29C9DA003ABCA1 /* ChartsInSwift */,
 				551909BF1E29C9DA003ABCA1 /* Products */,
+				55AE8B4A1E4FE31D007C4320 /* Charts.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +89,7 @@
 		55AE8B451E4F8D96007C4320 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55CD0EFB1E774FBD00ADB458 /* TestLineChartView.swift */,
 				551909C51E29C9DA003ABCA1 /* Main.storyboard */,
 			);
 			name = View;
@@ -215,6 +218,7 @@
 				55CD0EF81E7744B500ADB458 /* ChartTableViewCell.swift in Sources */,
 				551909C41E29C9DA003ABCA1 /* ViewController.swift in Sources */,
 				55CD0EF61E77434400ADB458 /* Extensions.swift in Sources */,
+				55CD0EFC1E774FBD00ADB458 /* TestLineChartView.swift in Sources */,
 				551909C21E29C9DA003ABCA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
